@@ -123,7 +123,7 @@
     <span class="material-symbols-outlined">restart_alt</span>
 </button>
 
-<div id="version">v1.0.3</div>
+<div id="version">v1.0.2</div>
 
 <script>
 let firstAnswer = "";
@@ -152,7 +152,7 @@ const questions = [
     { q: "2 (- + -) 2", a: "4" },
     { q: "Understood?", a: "Dootsrednu" },
     { q: "Is this the last question?", a: "yes" },
-    { q: "A B", a: "C" }, // fixed
+    { q: "A B", a: "C" },
     { q: "Is 0 nothing?", a: ["Maybe", "No"] },
     { q: "Blue + Red =", a: "Purple" },
     { q: "What was the answer to question 1?", a: () => firstAnswer },
@@ -183,7 +183,7 @@ function beep() {
     osc.stop(ctx.currentTime + 0.05);
 }
 
-// Animate version
+// Animate version rainbow
 function animateVersion() {
     hue = (hue + 0.5) % 360;
     versionEl.style.color = `hsl(${hue}, 100%, 50%)`;
